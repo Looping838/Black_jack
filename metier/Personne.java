@@ -1,6 +1,6 @@
 package metier;
 
-public class Croupier
+public class Personne 
 {
     String  pseudo ;
     boolean perdu  ;
@@ -8,9 +8,9 @@ public class Croupier
     int nbCarte    ;
     int nbMain     ; // TODO : A faire nbMain
 
-    public Croupier ()
+    public Personne ( String pseudo )
     {
-        this.pseudo = "Croupier" ;
+        this.pseudo = pseudo ;
         this.perdu  = false ;
 
         this.main   = new Carte[20] ;
@@ -21,9 +21,9 @@ public class Croupier
     public String  getPseudo () { return this.pseudo ; }
     public Carte[] getMain   () { return this.main   ; }
 
-    public void    setMain   ( Carte[] main   ) { this.main   = main   ; }
+    public void    setMain   ( Carte[] main  ) { this.main   = main   ; }
 
-    public void ajouterCarte ( Carte   carte  ) 
+    public void ajouterCarte ( Carte   carte ) 
     { 
         this.main[nbCarte] = carte ;
         nbCarte ++ ;
@@ -32,5 +32,10 @@ public class Croupier
     public void estPerdu () 
     { 
         if ( this.nbMain > 21  ) this.perdu = true ;
+    }
+
+    public String jouer () // TODO : faire methode pour action joueur  
+    {
+        return "" ;
     }
 }

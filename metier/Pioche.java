@@ -32,7 +32,7 @@ public class Pioche
 
     public void creerPioche ()
     {
-        String[]  tmpCouleur = { "Carre", "Pic", "Coeur", "Losange"} ;
+        String[] tmpCouleur = {"Coeur", "Carreau", "Pique", "Trefle"} ;
         String[] tmpValeur  = { "As", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Valet", "Reine", "Roi"} ;
 
         for ( String couleur : tmpCouleur )
